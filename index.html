@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY Todo App</title>   
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" 
+    crossorigin="anonymous">
+   
+</head> 
+<body>
+    <div class="container mt-5">
+    <h1 class="display-4 text-center">
+       <i class="fas fa-book-open"></i> My <span class="text-primary">BookList</span> App</h1>
+    
+    <form id="book-form">
+        <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control">    
+        </div>
+        <div class="form-group">
+        <label for="isb">ISBN</label>
+        <input type="text" id="isbn" class="form-control">    
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+    </form>
+
+     <table class="table table-striped mt-5">
+         <thead>
+             <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+             </tr>   
+         </thead>
+         <tbody id="book-list"></tbody>
+     </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>   
+
+<!-- type id class -->
